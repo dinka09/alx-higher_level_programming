@@ -1,1 +1,1 @@
-#This all about Python tasks or project
+This is all about python project

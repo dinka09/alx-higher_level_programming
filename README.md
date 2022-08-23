@@ -1,2 +1,2 @@
-This is the tasks on the Python
+0x00. Python - Hello, World
 
