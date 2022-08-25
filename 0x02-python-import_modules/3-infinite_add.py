@@ -8,4 +8,4 @@ if __name__ == "__main__":
     while index <= argv_count:
         res += int(sys.argv[index])
         index += 1
-        print("{:d}".format(res))
+    print("{:d}".format(res))
