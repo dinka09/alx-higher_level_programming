@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    characterslist = list(my_string)
-    for char in characterslist:
+    charslist = list(my_string)
+    for char in charslist:
         if char == 'c' or char == 'C':
-            characterslist.remove(char)
-    return("".join(characterslist))
+            charslist.remove(char)
+    return("".join(charslist))
