@@ -12,11 +12,11 @@ int palindrome(listint_t **l, listint_t *r)
 
 	if (r != NULL)
 	{
-		response = palindrome(1, r->next);
+		response = palindrome(l, r->next);
 		if (response != 0)
 		{
-			response = (r->n == (*1)->n);
-			*1 = (*1)->next;
+			response = (r->n == (*l)->n);
+			*l = (*l)->next;
 			return (response);
 		}
 		return (0);
