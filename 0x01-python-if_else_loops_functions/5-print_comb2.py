@@ -3,4 +3,4 @@ for numbers in range(100):
     if (numbers == 99):
         print("{0:02}".format(numbers))
     else:
-        print("{0:02}".format(numbers), end="")
+        print("{0:02}, ".format(numbers), end="")
