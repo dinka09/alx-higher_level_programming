@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
+    """
+    prints a list of any things, but only prints the integers
+    Returns the amount of integers printed
+    """
     i = 0
     printed = 0
     for i in range(0, x):
