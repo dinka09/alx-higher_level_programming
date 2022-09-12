@@ -10,5 +10,5 @@ def safe_print_list_integers(my_list=[], x=0):
             printed_value += 1
         except (ValueError, TypeError):
             continue
-        print()
-        return printed_value
+    print()
+    return printed_value
