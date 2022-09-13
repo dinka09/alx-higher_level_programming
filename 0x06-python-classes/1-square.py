@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+Args:
 size: size of the object's are wich should be considered as the private and setted as private attributes
 """
 class Square:
