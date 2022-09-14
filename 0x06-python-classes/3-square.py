@@ -3,6 +3,7 @@
 Square class to defien the size of the given object
 """
 
+
 class Square:
     """
     The square class to define the size of the object
@@ -11,7 +12,9 @@ class Square:
         """
         size: attributes that define the size of the object with integer value
         """
-        if type(size) != int:
+        if type(size) != inti:
+            """
+            check if the given attribute in not required integer""" 
             raise ValueError("size must be >= 0")
         self.__size = size
 
