@@ -14,7 +14,9 @@ class Square:
         """
         if type(size) != inti:
             """
-            check if the given attribute in not required integer""" 
+            check if the given attribute
+            in not required integer
+            """
             raise ValueError("size must be >= 0")
         self.__size = size
 
