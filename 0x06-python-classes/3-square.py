@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+Square class to defien the size of the given object
+"""
 
 class Square:
     """
