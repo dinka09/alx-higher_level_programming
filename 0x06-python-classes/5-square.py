@@ -14,7 +14,7 @@ class Square:
 
         size (attributes of the object given in integer)
         """
-        self.self = size
+        self.size = size
 
         @property
         def size(self):
