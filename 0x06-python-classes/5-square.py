@@ -29,6 +29,9 @@ class Square:
             setter to value
             """
             if type(value) != int:
+                """
+                check wether the given attribute is integer or not
+                """
                 raise TypeError("size must be an integer")
             elif value < 0:
                 raise ValueError("size must be >= 0")
