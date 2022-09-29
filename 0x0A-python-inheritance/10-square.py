@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 
-"""Base Geometry"""
+"""The is the Base Geometry"""
 
 
 Rectangle = __import__('9-rectangle').Rectangle
 """
-===================================
 module with class BaseGeometry
-===================================
 """
 
 
