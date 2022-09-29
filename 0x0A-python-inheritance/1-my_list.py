@@ -1,15 +1,16 @@
 #!/usr/bin/python3
-"""This the list"""
+"""
+===========================
+Module with class MyList
+===========================
+"""
 
 
-MyList = __import__('1-my_list').MyList
+class MyList(list):
+    """Class with method print_sorted"""
+    pass
 
-my_list = MyList()
-my_list.append(1)
-my_list.append(4)
-my_list.append(2)
-my_list.append(3)
-my_list.append(5)
-print(my_list)
-my_list.print_sorted()
-print(my_list)
+    def print_sorted(self):
+        """Methot that sorted a list"""
+
+        print(sorted(list(self)))
