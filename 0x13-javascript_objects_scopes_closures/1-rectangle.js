@@ -1,9 +1,9 @@
 #!/usr/bin/node
 // Class Rectangle that defines rectangle
 
- class Rectangle {
+ module.exporsts = class Rectangle {
     constructor(w, h) { 
         this.width = w;
         this.heigth = h;
-    };
+    }
 };
