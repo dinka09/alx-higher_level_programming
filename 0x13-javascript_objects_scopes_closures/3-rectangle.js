@@ -1,5 +1,4 @@
 #!/usr/bin/node
-// print
 
 module.exports = class Rectangle {
     constructor (w, h) {
