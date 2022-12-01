@@ -8,5 +8,5 @@ if (isNaN(x)) {
     for(let j = 0; j < x; j++)
       stringSquare += "x"
     console.log(stringSquare);
-}
+  }
 }
