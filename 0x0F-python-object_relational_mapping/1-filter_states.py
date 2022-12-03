@@ -12,10 +12,10 @@ if __name__== "__main__":
     import MySQLdb
     from sys import argv
     db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
-    c = db.cursor()
-    c.execute("""SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC""")
-    names = c.fetchall()
-    for name in names:
+    #c = db.cursor()
+    db.execute("""SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC""")
+    #rows = c.fetchall()
+    for name in rows:
         print(name)
-    c.close()
+    #c.close()
     db.close()
