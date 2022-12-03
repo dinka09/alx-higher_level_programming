@@ -16,6 +16,6 @@ if __name__== "__main__":
     c.execute("""SELECT * FROM states WhERE name like 'N%'\ORDER BY states.id ASC""")
     names = c.fetchall()
     for name in names:
-        print(row)
+        print(name)
     c.close()
     db.close()
