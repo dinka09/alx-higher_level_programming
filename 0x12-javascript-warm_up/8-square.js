@@ -9,4 +9,4 @@ if (isNaN(x)) {
       stringSquare += "x"
     console.log(stringSquare);
   }
-}
+};
