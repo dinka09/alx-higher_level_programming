@@ -1,14 +1,10 @@
 #!/usr/bin/node
-// prints the square string
+// prints a square
 
-const x = Math.floor(Number(process.argv[2]));
-if (isNaN(x)) {
+if (isNaN(process.argv[2])) {
   console.log('Missing size');
-  } else {
-    for (let i = 0; i < x; i++) {
-      stringSquare = "";
-    for(let j = 0; j < x; j++)
-      stringSquare += "x"
-    console.log(stringSquare);
+} else {
+  for (let i = 0; i < parseInt(process.argv[2]); i++) {
+    console.log('X'.repeat(parseInt(process.argv[2])));
   }
-};
+}
