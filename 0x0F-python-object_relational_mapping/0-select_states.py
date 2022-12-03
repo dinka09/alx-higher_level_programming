@@ -3,9 +3,8 @@
 
 import MySQLdb
 from sys import argv
-
 def query_table():
-    db=MySQLdb.connect(host="localhost",user=argv[1],password=argv[2],port=3306,database=argv[3])
+    db=MySQLdb.connect(host='localhost',user=argv[1],password=argv[2],database="hbtn_0e_0_usa")
     print(db.query("select * from states group by id"))
 if __name__ == '__main__':
     """Access to the database and get the state from it"""
