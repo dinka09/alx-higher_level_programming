@@ -4,11 +4,7 @@
 import MySQLdb
 from sys import argv
 def query_table():
-<<<<<<< HEAD
     db=MySQLdb.connect(host='localhost',user=argv[1],password=argv[2],database="hbtn_0e_0_usa")
-=======
-    db=MySQLdb.connect(host="localhost",port=3306,user=argv[1],password=argv[2],database="hbtn_0e_0_usa")
->>>>>>> 9d89238d77adb95dc3111368c636fbadad402150
     print(db.query("select * from states group by id"))
 if __name__ == '__main__':
     query_table()
