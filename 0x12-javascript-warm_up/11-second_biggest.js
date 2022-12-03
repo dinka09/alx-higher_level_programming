@@ -1,4 +1,9 @@
 #!/usr/bin/node
-// modifies the value of myVar to 333
+// searches the second biggest integer in the list of arguments.
 
-myVar = 333;
+if (process.argv.length <= 3) {
+  console.log(0);
+} else {
+  const list = process.argv.sort();
+  console.log(list.reverse()[1]);
+}
