@@ -3,7 +3,7 @@
 
 from MySQLdb import _mysql
 def query_table():
-    db=_mysql.connect(host="localhost",port=3306,user="mysql",passwd="mysql",db="hbtn_0e_0_usa")
+    db=_mysql.connect(host="localhost",port=3306,user="mysql",password="mysql",db="hbtn_0e_0_usa")
     print(db.query("select * from states group by id"))
 if __name__ == '__main__':
     query_table()
