@@ -8,6 +8,7 @@ Connects to default host (localhost) and port (3306)
 """
 
 if __name__ == "__main__":
+    """"access to the data base and lists the arguments"""
     from sys import argv
     import MySQLdb
     db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
@@ -18,4 +19,3 @@ if __name__ == "__main__":
         print(row)
     c.close()
     db.close()
-
