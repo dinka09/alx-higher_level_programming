@@ -7,6 +7,7 @@ Takes three arguments:
 Connects to host localhost and default port (3306)
 """
 if __name__ == "__main__":
+    """"Acces data from database via SQLalchemy"""
     from sqlalchemy import (create_engine)
     from sqlalchemy.orm import sessionmaker
     from model_state import Base, State
