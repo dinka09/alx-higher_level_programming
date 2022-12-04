@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script lists all cities from database hbtn_0e_0_usa
+"""Script takes state name as an argument and lists all cities of given state
 Takes three arguments:
     mysql username
     mysql password
@@ -8,20 +8,20 @@ Connects to default host (localhost) and port (3306)
 """
 
 if __name__ == "__main__":
-    """"access to the data base and lists cities"""
     from sys import argv
     import MySQLdb
     db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
-    with db.cursor() as c:
-        c.execute("""SELECT
-                  cities.id, cities.name
-                  FROM cities
-                  JOIN states
-                  ON cities.state_id = states.id
-                  WHERE states.name LIKE BINARY %(state_name)s
-                  ORDER BY cities.id ASC""", {'state_name': argv[4]})
-        rows = c.fetchall()
-        for rows in rows:
-            print(", ".join([row[1] for row in rows]))
-            c.close()
-            db.close()
+    c = db.cursor()
+    param = (argv[4], )
+    c.execute("SELECT * FROM cities\
+            INNER JOIN states ON cities.state_id = states.id\
+            WHERE states.name = %s\
+            ORDER BY cities.id ASC", param)
+    rows = c.fetchall()
+    cities = []
+    for row in rows:
+        if row[4] == param[0]:
+            cities.append(row[2])
+    print(', '.join(cities))
+    c.close()
+    db.close()
