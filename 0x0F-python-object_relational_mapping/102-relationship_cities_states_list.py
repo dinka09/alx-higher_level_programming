@@ -6,7 +6,9 @@ Takes three arguments
     database name
 Connects to host localhost and default port (3306)
 """
+
 if __name__ == "__main__":
+    """access the databse"""
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
     from relationship_state import Base, State
