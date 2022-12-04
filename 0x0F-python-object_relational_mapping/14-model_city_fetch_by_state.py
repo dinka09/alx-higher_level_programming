@@ -8,6 +8,7 @@ Connects to host localhost and default port (3306)
 """
 
 if __name__ == "__main__":
+    """"Access database and print all cities"""
     from sqlalchemy import (create_engine)
     from sqlalchemy.orm import aliased, sessionmaker
     from model_state import Base, State
